@@ -1,12 +1,12 @@
 /* Estilos Gerais do Site */
 body {
-    background-color: #ffffff;
-    color: #333333;
+    background-color: lavenderBlush;
+    color: thistle;
     transition: 0.3s;
 }
 
 .fundo-cinza {
-    background-color: #f8f9fa;
+    background-color: LavenderBlush;
 }
 
 .banner-principal {
@@ -17,7 +17,7 @@ body {
 }
 
 .btn-rosa {
-    background-color: #dfb2af;
+    background-color: thistle;
     color: white;
     border: none;
 }
@@ -43,8 +43,8 @@ body {
 
 /* MODO ESCURO */
 body.modo-escuro {
-    background-color: #121212;
-    color: #ffffff;
+    background-color: darkOrchid;
+    color: mediumOrchid;
 }
 body.modo-escuro .fundo-cinza {
     background-color: #1e1e1e;
