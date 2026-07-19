@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ariana Grande Fanpage</title>
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        /* Cores base */
+        body {
+            background-color: #ffffff;
+            color: #333333;
+            transition: 0.3s; /* Deixa a mudança de cor suave */
+        }
+
+        /* Cor de fundo para as seções alternativas */
+        .fundo-cinza {
+            background-color: #f8f9fa;
+        }
+
+        /* Banner Principal */
+        .banner-principal {
+            background-image: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1514525253161-7a46d19cd819?q=80&w=1200');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+        }
+
+        /* Estilo dos botões */
+        .btn-rosa {
+            background-color: #dfb2af;
+            color: white;
+            border: none;
+        }
+        .btn-rosa:hover {
+            background-color: #c59794;
+            color: white;
+        }
+
+        /* Imagens da Galeria */
+        .foto-galeria {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 8px;
+        }
+
+        /* Botão Voltar ao Topo */
+        #btn-topo {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            display: none; 
+            z-index: 99;
+        }
+
+        /* MODO ESCURO */
+        body.modo-escuro {
+            background-color: #121212;
+            color: #ffffff;
+        }
+        body.modo-escuro .fundo-cinza {
+            background-color: #1e1e1e;
+        }
+        body.modo-escuro .card {
+            background-color: #242424;
+            color: #ffffff;
+        }
+        body.modo-escuro .form-control {
+            background-color: #333333;
+            color: #ffffff;
+            border-color: #555555;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <div class="container">
+            <a class="navbar-brand" href="#">Ariana Grande FN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#inicio">Início</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#servicos">Serviços</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#contato">Contato</a></li>
+                </ul>
+                <button class="btn btn-outline-light ms-2" id="btn-escuro">Contraste</button>
+            </div>
+        </div>
+    </nav>
+
+    <div id="inicio" class="banner-principal d-flex align-items-center text-center justify-content-center text-white">
+        <div class="container">
+            <h1 class="display-4 fw-bold">Eternal Sunshine</h1>
+            <p class="lead">Bem-vindo à fã-base oficial do projeto escolar.</p>
+            <a href="#sobre" class="btn btn-rosa btn-lg">Conhecer</a>
+        </div>
+    </div>
+
+    <section id="sobre" class="py-5">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <h2>Sobre a Ariana</h2>
+                    <p>Ariana Grande é uma das maiores cantoras pop do mundo. Dona de uma voz incrível e hits como "Thank U, Next" e "Positions", ela arrasta multidões de fãs em suas turnês mundiais.</p>
+                </div>
+                <div class="col-md-6">
+                    <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?q=80&w=600" class="img-fluid rounded" alt="Microfone">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="servicos" class="py-5 fundo-cinza">
+        <div class="container">
+            <h2 class="text-center mb-4">Nossos Serviços</h2>
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 p-3 text-center">
+                        <h5>Web Design</h5>
+                        <p>Criação de fundos de tela e layouts inspirados nos álbuns.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 p-3 text-center">
+                        <h5>Desenvolvimento</h5>
+                        <p>Sites rápidos e fáceis para fã-clubes organizarem mutirões.</p>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <div class="card h-100 p-3 text-center">
+                        <h5>Suporte</h5>
+                        <p>Ajuda para compra de ingressos e informações das turnês.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Galeria de Fotos</h2>
+            <div class="row g-3">
+                <div class="col-6 col-md-4"><img src="https://images.unsplash.com/photo-1470225620780-dba8ba36b745?q=80&w=400" class="foto-galeria" alt="Foto 1"></div>
+                <div class="col-6 col-md-4"><img src="https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?q=80&w=400" class="foto-galeria" alt="Foto 2"></div>
+                <div class="col-6 col-md-4"><img src="https://images.unsplash.com/photo-1501386761578-eac5c94b800a?q=80&w=400" class="foto-galeria" alt="Foto 3"></div>
+                <div class="col-6 col-md-4"><img src="https://images.unsplash.com/photo-1459749411175-04bf5292ceea?q=80&w=400" class="foto-galeria" alt="Foto 4"></div>
+                <div class="col-6 col-md-4"><img src="https://images.unsplash.com/photo-1524368535928-5b5e00ddc76b?q=80&w=400" class="foto-galeria" alt="Foto 5"></div>
+                <div class="col-6 col-md-4"><img src="https://images.unsplash.com/photo-1486591978090-58e619d37fe7?q=80&w=400" class="foto-galeria" alt="Foto 6"></div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contato" class="py-5 fundo-cinza">
+        <div class="container" style="max-width: 500px;">
+            <h2 class="text-center mb-4">Contato</h2>
+            <form id="meuFormulario">
+                <div class="mb-3">
+                    <label class="form-label">Nome</label>
+                    <input type="text" class="form-control" id="campoNome">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Email</label>
+                    <input type="email" class="form-control" id="campoEmail">
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Mensagem</label>
+                    <textarea class="form-control" id="campoMensagem" rows="3"></textarea>
+                </div>
+                <button type="submit" class="btn btn-rosa w-100">Enviar</button>
+            </form>
+        </div>
+    </section>
+
+    <button class="btn btn-dark" id="btn-topo">↑ Topo</button>
+
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p class="mb-1">Colégio Estadual Inêz Vicente Borocz - Ensino Fund. e Médio</p>
+            <p class="mb-1" id="texto-ano">Ano: 2°BTEC 2026</p>
+            <p class="mb-0 text-muted">Aluno: Nathaly Daniele Tenorio da Silva</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+</html>
