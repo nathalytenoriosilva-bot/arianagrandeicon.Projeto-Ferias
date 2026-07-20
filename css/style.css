@@ -1,12 +1,12 @@
 /* Estilos Gerais do Site */
 body {
-    background-color: #FFF0F5 ;
-    color: #D8BFD8;
+    background-color: #F3EAFB;
+    color: #4A3E56;
     transition: 0.3s;
 }
 
 .fundo-cinza {
-    background-color: #FFF0F5;
+    background-color: #E8DAF5;
 }
 
 .banner-principal {
@@ -15,15 +15,20 @@ body {
     background-position: center;
     height: 400px;
 }
-
+.card {
+background-color: #FFFFFF; 
+border: 1px solid #D6C2EB; 
+color: #4A3E56;
+}
 .btn-rosa {
-    background-color: #D8BFD8;
-    color: white;
+    background-color: #D6C2EB;
+    color: #4A3E56;
     border: none;
+    font-weight: bold;
 }
 .btn-rosa:hover {
-    background-color: #DDA0DD;
-    color: white;
+    background-color: #C3A9E2;
+    color: #FFFFFF;
 }
 
 .foto-galeria {
@@ -43,18 +48,19 @@ body {
 
 /* MODO ESCURO */
 body.modo-escuro {
-    background-color: #BA55D3;
-    color: #DA70D6;
+    background-color: #B599CE;
+    color: #FFFFFF;
 }
 body.modo-escuro .fundo escuro {
-    background-color: #BA55D3;
+    background-color: #A384C1;
 }
 body.modo-escuro .card {
-    background-color: #DA70D6;
-    color: #DA70D6;
+    background-color: #A384C1;
+    color: #FFFFFF;
+    bolder: 1px solid #C9B3DF;
 }
 body.modo-escuro .form-control {
-    background-color: #BA55D3;
-    color: #DA70D6;
-    border-color: #BA55D3;
+    background-color: #C9B3DF;
+    color: #332244;
+    border-color: #B599CE;
 }
