@@ -47,6 +47,7 @@ color: #4A3E56;
 }
 
 /* MODO ESCURO */
+html body.modo-escuro;
 body.modo-escuro {
     background-color: #B599CE;
     color: #FFFFFF;
