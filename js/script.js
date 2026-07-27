@@ -51,14 +51,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
 });
 
- <script>
-     function atualizarDataHora() {
-      const agora = new Date();
-      const dataFormatada = agora.toLocaleDateString ('pt-BR'); 
-      const horaFormatada = agora.toLocaleTimeString('pt-BR');
-      document.getElementByld('data-hora').innerHTML= Acessado em: $ {dataFormatada} às $ {horaFormatada};
-}
-        atualizarDataHora();
+   <script>
+    function atualizarDataHora() {
+        const agora = new Date();
+        
+        const dataFormatada = agora.toLocaleDateString('pt-BR'); 
+        const horaFormatada = agora.toLocaleTimeString('pt-BR');
+        document.getElementByld('data-hora').innerHTML = 
+            `Acessado em: ${dataFormatada} às ${horaFormatada}`;
+    }
+    atualizarDataHora();
  
-        setlnterval(atualizarDataHora, 1000);
+    setlnterval(atualizarDataHora, 1000);
 <script>
+    
