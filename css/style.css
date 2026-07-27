@@ -49,24 +49,27 @@ color: #4A3E56;
 /* MODO ESCURO */
 html body.modo-escuro;
 body.modo-escuro {
-    background-color: #B599CE;
-    color: #FFFFFF;
+    background-color: #2D2235;
+    color: #E6DFEC;
 }
 body.modo-escuro .fundo-cinza {
-    background-color: #A384C1;
+    background-color: #241B2B;
 }
 body.modo-escuro .card {
-    background-color: #A384C1;
-    color: #FFFFFF;
-    border: 1px solid #C9B3DF;
+    background-color: #382A42;
+    color: #E6DFEC;
+    border: 1px solid #4C3959;
+}
+html body.modo-escuro .text-muted {
+color: #B2A2C0;
 }
 body.modo-escuro .form-control {
-    background-color: #C9B3DF;
-    color: #332244;
-    border-color: #B599CE;
+    background-color: #241B2B;
+    color: #E6DFEC;
+    border-color: #4C3959;
 }
 
-/* Tamanho da Logo no Menu (Força máxima) */
+/* Tamanho da Logo no Menu */
 .navbar-brand img.logo-site,
 img.logo-site {
     height: 35px;       
@@ -74,5 +77,38 @@ img.logo-site {
     max-height: 40px;   
     object-fit: contain;
     border-radius: 50%;            
+}
+/* Botão Voltar ao Topo */
+.btn-topo {
+    display: inline-block;
+    padding: 8px 18px;
+    background-color: #E8DAF5;         
+    color: #3D2E4D;          
+    text-decoration: none;  
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 20px;                
+    border: 1px solid #D6C2EB;
+    transition: all 0.3s ease;
+}
+
+/* Efeito ao passar o mouse */
+.btn-topo:hover {
+    background-color: #B599CE;          
+    color: #FFFFFF;          
+    transform: translateY(-3px);       
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+/* Adaptação para o Modo Escuro */
+html body.modo-escuro .btn-topo {
+    background-color: #382A42;
+    color: #E6DFEC;
+    border-color: #4C3959;
+}
+
+html body.modo-escuro .btn-topo:hover {
+    background-color: #7B5B96;
+    color: #FFFFFF;
 }
 
