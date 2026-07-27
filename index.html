@@ -172,25 +172,41 @@
     
     <footer class="bg-dark text-white text-center py-4 mt-5">
         <p class="mb-1">Colégio Estadual Inêz Vicente Borocz - Ensino Fund. e Médio</p>
-        <p class="mb-1">Ano: 2°BTEC | <span id="data-hora">Carregando...</span></p>
+        <p class="mb-1">Ano: 2°BTEC | <span id="data-hora">Carregando data e hora...</span></p>
         <p class="mb-0">Aluno: Nathaly Daniele Tenorio da Silva</p>
     </footer>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="js/script.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
     <script>
-    function atualizarDataHora() {
-        const agora = new Date();
+        function atualizarDataHora() {
+            const agora = new Date();
+            const dataFormatada = agora.toLocaleDateString('pt-BR');
+            const horaFormatada = agora.toLocaleTimeString('pt-BR');
+            
+            const elementoData = document.getElementById('data-hora');
+            if (elementoData) {
+                elementoData.innerHTML = `Acessado em: ${dataFormatada} às ${horaFormatada}`;
+            }
+        }
         
-        const dataFormatada = agora.toLocaleDateString('pt-BR'); 
-        const horaFormatada = agora.toLocaleTimeString('pt-BR');
-        document.getElementByld('data-hora').innerHTML = 
-            `Acessado em: ${dataFormatada} às ${horaFormatada}`;
-    }
-    atualizarDataHora();
- 
-    setlnterval(atualizarDataHora, 1000);
-<script>
+        atualizarDataHora();
+        setInterval(atualizarDataHora, 1000);
+
+        
+        function alternarModoEscuro() {
+            document.body.classList.toggle('modo-escuro');
+            var btn = document.getElementById('btn-modo-escuro');
+            if (btn) {
+                if (document.body.classList.contains('modo-escuro')) {
+                    btn.textContent = 'Modo Claro';
+                } else {
+                    btn.textContent = 'Modo Escuro';
+                }
+            }
+        }
+    </script>
+
 
 </body>
 </html>
