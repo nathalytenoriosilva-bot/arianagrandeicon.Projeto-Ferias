@@ -79,7 +79,13 @@ html body.modo-escuro h5 {
     color: #FFFFFF;
 }
 
-/* Cartões (Cards) */
+/* Cartões (Cards) Texto */
+html body.modo-escuro .card {
+ background-colour: #4A3A55;
+ border: 1px solid #5C496A;
+}
+
+/* Cartões (Cards)*/
 html body.modo-escuro .card,
 html body.modo-escuro .card h1,
 html body.modo-escuro .card h2,
