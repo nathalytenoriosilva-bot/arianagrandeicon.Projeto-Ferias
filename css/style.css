@@ -80,11 +80,17 @@ html body.modo-escuro h5 {
 }
 
 /* Cartões (Cards) */
-html body.modo-escuro .card {
-    background-color: #4A3A55;
-    color: #F3ECF8;
-    border: 1px solid #5C496A;
+html body.modo-escuro .card,
+html body.modo-escuro .card h1,
+html body.modo-escuro .card h2,
+html body.modo-escuro .card h3,
+html body.modo-escuro .card h4,
+html body.modo-escuro .card h5,
+html body.modo-escuro .card p,
+html body.modo-escuro .card .text-muted {
+    color: #FFFFFF;
 }
+
 
 /* Textos secundários */
 html body.modo-escuro .text-muted {
