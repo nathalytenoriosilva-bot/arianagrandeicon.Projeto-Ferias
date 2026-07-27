@@ -79,23 +79,20 @@ html body.modo-escuro h5 {
     color: #FFFFFF;
 }
 
-/* Cartões (Cards) Texto */
-html body.modo-escuro .card {
- background-colour: #4A3A55;
- border: 1px solid #5C496A;
+/* Fundo dos Cards */
+html body.modo-escuro .card,
+html body.modo-escuro div.card,
+html body.modo-escuro .card-body {
+    background-color: #4A3A55 !important;
+    border: 1px solid #5C496A !important;
 }
 
-/* Cartões (Cards)*/
-html body.modo-escuro .card,
-html body.modo-escuro .card h1,
-html body.modo-escuro .card h2,
-html body.modo-escuro .card h3,
-html body.modo-escuro .card h4,
-html body.modo-escuro .card h5,
-html body.modo-escuro .card p,
-html body.modo-escuro .card .text-muted {
-    color: #FFFFFF;
+/* Textos dentro do card */
+html body.modo-escuro .card *,
+html body.modo-escuro div.card * {
+    color: #FFFFFF !important;
 }
+
 
 
 /* Textos secundários */
