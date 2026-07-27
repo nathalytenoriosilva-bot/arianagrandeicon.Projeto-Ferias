@@ -47,27 +47,89 @@ color: #4A3E56;
 }
 
 /* MODO ESCURO */
-html body.modo-escuro;
-body.modo-escuro {
-    background-color: #2D2235;
-    color: #E6DFEC;
+
+/* Fundo geral da página e texto */
+html body.modo-escuro {
+    background-color: #3C2F45; 
+    color: #F3ECF8;            
 }
-body.modo-escuro .fundo-cinza {
-    background-color: #241B2B;
+
+/* Banner do topo e cabeçalho */
+html body.modo-escuro .banner-principal,
+html body.modo-escuro header {
+    background-color: #2F2437;
+    color: #FFFFFF;
 }
-body.modo-escuro .card {
-    background-color: #382A42;
-    color: #E6DFEC;
-    border: 1px solid #4C3959;
+
+/* Seções gerais */
+html body.modo-escuro section,
+html body.modo-escuro .fundo-cinza,
+html body.modo-escuro .bg-light,
+html body.modo-escuro .bg-white {
+    background-color: #382B41;
+    color: #F3ECF8;
 }
+
+/* Títulos da página */
+html body.modo-escuro h1,
+html body.modo-escuro h2,
+html body.modo-escuro h3,
+html body.modo-escuro h4,
+html body.modo-escuro h5 {
+    color: #FFFFFF;
+}
+
+/* Cartões (Cards) */
+html body.modo-escuro .card {
+    background-color: #4A3A55;
+    color: #F3ECF8;
+    border: 1px solid #5C496A;
+}
+
+/* Textos secundários */
 html body.modo-escuro .text-muted {
-color: #B2A2C0;
+    color: #D3C4DF;
 }
-body.modo-escuro .form-control {
-    background-color: #241B2B;
-    color: #E6DFEC;
-    border-color: #4C3959;
+
+/* Carrossel e Galeria */
+html body.modo-escuro #carrossel,
+html body.modo-escuro #galeria,
+html body.modo-escuro .carousel,
+html body.modo-escuro .carousel-inner {
+    background-color: #382B41;
 }
+
+html body.modo-escuro #galeria img,
+html body.modo-escuro .foto-carrossel {
+    border-color: #5C496A;
+}
+
+html body.modo-escuro .carousel-caption {
+    background-color: rgba(47, 36, 55, 0.75) !important;
+    color: #FFFFFF;
+    border-radius: 8px;
+}
+
+/* Formulário de Contato */
+html body.modo-escuro .form-control {
+    background-color: #2F2437;
+    color: #FFFFFF;
+    border: 1px solid #5C496A;
+}
+
+/* Botões (Enviar e Voltar ao Topo) */
+html body.modo-escuro .btn-rosa,
+html body.modo-escuro .btn-topo {
+    background-color: #6C527D;
+    color: #FFFFFF;
+    border-color: #826696;
+}
+
+html body.modo-escuro .btn-rosa:hover,
+html body.modo-escuro .btn-topo:hover {
+    background-color: #826696;
+}
+
 
 /* Tamanho da Logo no Menu */
 .navbar-brand img.logo-site,
